@@ -16,4 +16,8 @@
     <ProjectReference Include="..\ScopeARJobApplication\ScopeARJobApplication.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="ConsoleShapeTests\" />
+  </ItemGroup>
+
 </Project>
