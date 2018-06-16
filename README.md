@@ -1,48 +1,28 @@
 # Scope AR Job Application
 
-This is my submission for the Scope AR programming test. I've created this with C# in the .NET Core 2.0 I believe I've gone past what may have been originally intended for scope of this assignment. This was done to better demonstrate how I thought this problems should be solved if it were to be integrated into other code. I've made each solution to the two problems into their own classes. Furthermore I've added a factory for the creation of each solution. The actual solution of each problem is called in the creator of each class so that each can be drawn multiple time without the need to recalculate each shape. 
+This is my submission for the Scope AR programming test. This is a console application which takes in user input and outputs two different shapes according to the specifications of the assignment. I've created this with C# in the .NET Core 2.0 I believe I've gone past what may have been originally intended for scope of this assignment. This was done to better demonstrate how I thought this problems should be solved if it were to be integrated into other code. I've made each solution to the two problems into their own class. Furthermore I've added a factory for the creation of each solution. The actual solution of each problem is called in the creator of each class so that each can be drawn multiple time without the need to recalculate each shape. 
+
+ScopeARJobApplication/Program.cs contains the Main function which takes in the user input and creates the shapes based on that.
+ScopeARJobApplication/ConsoleShape contains the classes with the actual solutions
+ScopeARJobApplication/ConsoleShapeFactory contains the code for the factory
+ScopeARJobApplicationTests/ConsoleShapeTests contains the tests for the ConsoleShapes and Factory. 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Clone the repo from https://github.com/swbenson11/ScopeARApplication.git
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
+Visual Studios if you want to run the tests, or console application. Otherwise you can just view the files in ScopeARJobApplication and ScopeARJobApplicationTests to see what I did. 
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
+Pull repo from the git. Open the solutions file in Visual Studio. Once the project is open you should be able to run the application, or run the tests.  
 
 ## Running the tests
 
 Test were created with Visual Studio default testing library. You should be able to run them through the test explorer or, with "ctrl + R, A"
 
-I've created tests for just the ConsoleShape namespace. This was because I was working under the assumtion that you wanted me to create those solutions as example code in a larger project and that the user input section was less important. 
-
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-
+I've created tests for just the ConsoleShape namespace. This was because I was working under the assumption that you wanted me to create those solutions as example code in a larger project and that the user input section was less important. It was a little redundant to put them in folder called ConsoleShapeTests, but if there were more parts to this project it would make more sense. 
 
 ## Authors
 
