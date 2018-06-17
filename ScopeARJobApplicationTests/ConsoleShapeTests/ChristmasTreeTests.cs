@@ -51,8 +51,9 @@ namespace ScopeARJobApplicationTests
         [TestMethod]
         public void TestScaling()
         {
-            var testShape = new ChristmasTreeShape(100);
-            var expectedLastLine = new string('x', (100 * 2) - 1);
+            var shapeSize = 100;
+            var testShape = new ChristmasTreeShape(shapeSize);
+            var expectedLastLine = new string('x', shapeSize * 2 - 1);
             var splitShape = testShape.GetShape().Split("\n");
             var actualLastLine = splitShape[splitShape.Length-1];
 

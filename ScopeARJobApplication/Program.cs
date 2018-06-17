@@ -4,11 +4,14 @@ using System;
 namespace ScopeARJobApplication
 {
     /// <summary>
-    /// Main class, takes user input can calls parameters on Console Shape Factory. 
+    /// Main class, takes user input and calls parameters on Console Shape Factory. 
     /// </summary>
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        /// <summary>
+        /// Main function, initilizes input loop. 
+        /// </summary>
+        public static void Main()
         {
             Console.WriteLine("Welcome to the amazing drawing program.");
             RunMainLoop();
@@ -16,7 +19,6 @@ namespace ScopeARJobApplication
 
         private static void RunMainLoop()
         {
-            var consoleFactory = new ConsoleShapeFactory();
             var shapeType = 1;
             while (shapeType != 0)
             {
@@ -26,8 +28,7 @@ namespace ScopeARJobApplication
                     break;
                 }
                 var shapeSize = GetShapeSize();
-                Console.WriteLine(consoleFactory.GetConsoleShape((ConsoleShapeEnum)shapeType, shapeSize).GetShape());
-                Console.WriteLine();
+                PrintShape(shapeType, shapeSize);
             }
         }
 
@@ -57,6 +58,14 @@ namespace ScopeARJobApplication
                 return -1;
             }
             return shapeType;
+        }
+
+        private static void PrintShape(int shapeType, int shapeSize)
+        {
+            var consoleFactory = new ConsoleShapeFactory();
+            var shape = consoleFactory.GetConsoleShape((ConsoleShapeEnum)shapeType, shapeSize).GetShape();
+            Console.WriteLine(shape);
+            Console.WriteLine();
         }
 
         private static void InvalidInput()
