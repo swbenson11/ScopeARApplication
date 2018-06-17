@@ -3,9 +3,9 @@
 This is my submission for the Scope AR programming test. This is a console application which takes in user input and outputs two different shapes according to the specifications of the assignment. I've created this with C# in the .NET Core 2.0. I believe I've gone past what may have been originally intended for scope of this assignment. This was done to better demonstrate how I thought these problems should be solved if it were to be integrated into other code. I've made each solution to the two problems into their own class. Furthermore I've added a factory for the creation of each solution. The actual solution of each problem is called in the constructor of each class so that each can be drawn multiple time without the need to recalculate each shape. 
 
 
-```ScopeARJobApplication/Program.cs``` contains the Main function which takes in the user input and creates the shapes based on that.
-```ScopeARJobApplication/ConsoleShape``` contains the classes with the actual solutions
-```ScopeARJobApplication/ConsoleShapeFactory``` contains the code for the factory
+```ScopeARJobApplication/Program.cs``` contains Main function which takes user input to create console shapes.
+```ScopeARJobApplication/ConsoleShape``` contains the classes with the actual solutions.
+```ScopeARJobApplication/ConsoleShapeFactory``` contains the code for the factory.
 ```ScopeARJobApplicationTests/ConsoleShapeTests``` contains the tests for the ConsoleShapes and Factory. 
 
 ## Getting Started
